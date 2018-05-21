@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+  <head>
+       <title>Connect</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="siginoriginalcss.css" type="text/css">
+     <script type="text/javascript">
+
+
+     function validate(formobj)
+     {
+       var Username,Password,Username1,Password1;
+       Username=formobj.user.value;
+       Password=formobj.pass1.value;
+       Username1=formobj.user1.value;
+       Password1=formobj.pass2.value;
+
+        if(Username.length==0 || Username1.length==0)
+       {
+         alert("Kindly enter the email first");
+         formobj.user.focus();
+         return false;
+       }
+       else if(Password.length<5||Password.length>10 || Password1.length<5||Password1.length>10)
+       {
+         alert("Enter a valid input to upto 10 char");
+         formobj.pass1.focus();
+
+         return false;
+       }
+       else
+       {
+         alert("form submitted sucessfully");
+         return true;
+       }
+     }
+     </script>
+
+  </head>
+  <body>
+<form method="POST" action="homemainpagedashboard.html" onsubmit= "return validate(this);">
+<div class="close">
+   <p ><a href="mainpage.html">X</a></p>
+ </div>
+<div class="sigup">
+   <p style="font-family:sans-serif;text-align: center;color:#4d4dff;font-size:60px;margin-right:20px"><i>Sign Up</i> </p>
+    <p style="font-family:serif;text-align: center;font-size:20px;margin-right:20px;">Already have a account ?<a href="loginfinal.html">Log In</a></p>
+</div>
+<br><br>
+<div class="sigin1">
+
+<div class="information">
+<p><label class="emailpannel"style="font-family:serif;text-align:left;font-size:24px;margin-left:300px">Email</label></p>
+<input type="email" name="user"  style="background-color: #f2f2f2f2;box-sizing:border-box;width:280px;font-family: cursive;border-bottom: 1px solid #4d4dff;margin-left:300px; border-top: 1px solid #f2f2f2f2;border-right:1px solid #f2f2f2f2;border-left: 1px solid #f2f2f2f2;box-shadow:0px 1px 0px #262626"/>
+
+<p style="color:#f2f2f2f2">sgvfjv</p>
+<p><label class="emailpannel2"style="font-family:serif;text-align:left;font-size:24px;margin-left:300px">Enter Userame</label></p>
+<input type="text" name="user1"  style="background-color: #f2f2f2f2;box-sizing:border-box;width:280px;font-family: cursive;border-bottom: 1px solid #4d4dff;margin-left:300px; border-top: 1px solid #f2f2f2f2;border-right:1px solid #f2f2f2f2;border-left: 1px solid #f2f2f2f2;box-shadow:0px 1px 0px #262626"/>
+
+<p style="color:#f2f2f2f2">sgvfjv</p>
+<p><label class="Password"style="font-family:serif;text-align:left;font-size:24px;margin-left:300px">Password</label></p>
+<input type="text" name="pass2"  style="background-color: #f2f2f2f2;box-sizing:border-box;font-family: cursive;width:280px;border-bottom: 1px solid #4d4dff;margin-left:300px; border-top: 1px solid #f2f2f2f2;border-right:1px solid #f2f2f2f2;border-left: 1px solid #f2f2f2f2;box-shadow:0px 1px 0px #262626"/>
+
+<p style="color:#f2f2f2f2">sgvfjv</p>
+<p><label class="password2"style="font-family:serif;text-align:left;font-size:24px;margin-left:300px">Phone number</label></p>
+<input type="text" name="pass1" style="background-color: #f2f2f2f2;box-sizing:border-box;font-family: cursive;width:280px;border-bottom: 1px solid #4d4dff;margin-left:300px; border-top: 1px solid #f2f2f2f2;border-right:1px solid #f2f2f2f2;border-left: 1px solid #f2f2f2f2;box-shadow:0px 1px 0px #262626"/>
+
+<p style="color:#f2f2f2f2">sgvfjv</p>
+<input type="submit" name="submit" required value="Sigin Up"style="height:40px;width:170px;text-align: center;color:blue;background-color:#f2f2f2f2 ;border:2px solid #4d4dff ;box-sizing:border-box;border-radius:20px;margin-left:300px"/>
+
+</div>
+
+</div>
+
+
+
+
+
+<div class="sigin2">
+ <p><a href="http://www.facebook.com"><image style="box-shadow: 10px 10px 5px 0px #262626" align="right" src="facebook.png"height="55px" width="400px"></a></p>
+ <p><a href="http://www.gmail.com"><image align="right" style="box-shadow: 10px 10px 10px 1px #262626"src="gmail.png"height="55px" width="400px"></a></p>
+</div>
+
+
+<div class="bottompara">
+   <p style="color:#f2f2f2f2">sgvfjv</p>
+  <p>* By singning in, you agree to our Terms of Use, Privacy Policy <br>and to receive our emails, newsletters & updates.</p>
+</div>
+
+
+<div class="last" >
+<br>
+<p >&copy;Travel-World.co.in</p>
+</div>
+
+    </body>
+</html>
